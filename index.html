@@ -208,8 +208,51 @@
          <img class="img-polaroid" src="http://placehold.it/480x300">
       </div>
     </div>
-
-           
+    <!-- For the FAQ,  we introduce a little bit of JS, using the accordian. -->
+    <!-- This brings in jquery.js and bootstrap.js as dependencies. -->
+    <!-- http://twitter.github.io/bootstrap/javascript.html#collapse-->
+    <div class="row-fluid faq">
+       <div class="span10 offset1">
+        <h3>FAQ</h3>
+        <div class="accordian" id="accordian2">
+          <div class="accordian-group">
+             <div class="accordian-heading">
+               <a class="accordian-toggle" data-toggle="collapse" 
+                 data-parent="#accordian2" href="#collapseOne">
+                 What does FAQ stand for?
+                </a>
+            </div>
+            <div id="collaspeOne" class="accordian-body collapse">
+              <div class="accordian-inner">
+                Frequently Asked Question.
+              </div>
+            </div>
+           </div>
+           <div class="accordian-group">
+             <div class="accordian-heading">
+               <a class="accordian-toggle" data-toggle="callapse"
+                 data-parent="#accordian2" href="collapseTwo">
+                 What's a Frequently Asked Question?
+                </a>
+             </div>
+             <div id="collapseTwo" class="accordian-body collapse">
+               <div class="accordian-inner">
+                 A question which is commonly asked by users.
+                </div>
+               </div>
+              </div>
+             </div>
+            </div>
+          
+        </div>
+    
+    <div class="rowf-fluid footer">
+      <div class="span12">
+        <p> This work is licensed under the <a href="http://creativecommons.org/licenses/by-sa/3.0/">CC
+        By-SA 3.0
+        </a>, without all cruft that would otherwise be put a the bottom of the page.</p>
+       </div>
+    </div>       
   </div>
  </body>
 </html>
